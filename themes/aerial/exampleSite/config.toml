@@ -1,10 +1,10 @@
-baseurl = "https://hiratasaori.com/"
 languageCode = "en-us"
-title = "さおりの部屋"
-theme = "Aerial"
+title = "Aerial"
+baseurl = "http://example.org/"
+theme = "aerial"
 
 [params]
-  name = "HIRATA SAORI"
+  name = "Adam Jensen"
   about = "Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this"
   copyright = "Untitled"
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
@@ -19,7 +19,7 @@ theme = "Aerial"
 [[params.social]]
   medium = "Facebook"
   icon = "facebook"
-  link = "https://www.facebook.com/saori.hirata"
+  link = "#"
 
 [[params.social]]
   medium = "Dribbble"
@@ -29,7 +29,7 @@ theme = "Aerial"
 [[params.social]]
   medium = "Github"
   icon = "github"
-  link = "https://github.com/hiratasaori"
+  link = "#"
 
 [[params.social]]
   medium = "Email"
