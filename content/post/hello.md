@@ -8,7 +8,7 @@ title = "hello"
 # 見出し1です
 `hugo new site sample-hugo`
 
-`/Users/pulsedesign/www/sample-hugo`
+`/Users/hoge/www/sample-hugo`
 
 `hugo server`
 
@@ -32,11 +32,11 @@ title = "hello"
 
 `git config -l`
 
-`git config --local user.name "hiratasaori"`
+`git config --local user.name "hoge"`
 
-`git config --local user.email fkyhsa.sh@gmail.com`
+`git config --local user.email hoge@gmail.com`
 
-`echo "# hiratasaori" >> README.md`
+`echo "# hoge" >> README.md`
 
 `hugo undraft content/post/hello.md`
 
