@@ -2,6 +2,7 @@ baseurl = "https://hiratasaori.com/"
 languageCode = "en-us"
 title = "さおりの部屋"
 theme = "hugo-strata-theme"
+googleAnalytics = "UA-93372029-1"
 
 
 # hugo-strata-theme のソース
