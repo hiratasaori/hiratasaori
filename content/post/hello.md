@@ -1,63 +1,139 @@
 +++
 date = "2017-03-09T14:10:07+09:00"
 draft = false
-title = "hello"
+title = "静的サイトジェネレーター Hugo を使う"
 
 +++
 
-# hugo にする時に使ったコマンド一覧
+自分のサイトを作るにあたって、Hugo という静的サイトジェネレーターを利用しました。  
+Google さん作のオープンソースの静的言語 Go 言語でできている Hugo は、  
+他の静的サイトジェネレーターと比較しても、構成がシンプルでコンパイルが速いようです。
 
-- 新しいリポジトリを作成 テスト
+最近いろいろと教えていただきながら、Netlify や Amazon Route 53 を利用できたので  
+この勢いで Hugo を利用して、静的サイトを作れるようになれたらなぁ・・  
+ということで、チャレンジしてみました。
 
-`hugo new site sample-hugo`
+教えていただいたこと忘れないように、備忘録としてメモしておきたいと思います。
 
--
-`hugo server`
 
-`hugo new post/hello`
+# 使用したコマンドまとめ
+新しくサイトを作成する
+```bash
+$ hugo new site sample-hugo
+```
 
-`hugo new post/hello.md`
+サーバーを起動してブラウザでプレビューする
+```bash
+$ hugo server
+```
+http://localhost:1313/ で見られます
 
-`hugo server --buildDrafts`
+下書き状態（draft true）の記事も含めてプレビューする
+```bash
+$ hugo server --buildDrafts
+```
 
-`cd themes`
+テーマを適用してプレビューする（サイトを新しく作ったときだけ？）
+```bash
+$ hugo server --theme=テーマ名 --buildDrafts
+```
+後ろに -- で繋げてオプション追加できます
 
-`git clone https://github.com/dim0627/hugo-tranquilpeak-theme.git`
+記事を新規作成する
+```bash
+$ hugo new post/hello.md
+```
 
-`hugo server --theme=hugo-tranquilpeak-theme --buildDrafts`
+Hugo のバージョンを表示する
+```bash
+$ hugo version
+```
 
-`hugo version`
+git 管理を定義する（初期化）
+```bash
+$ git init
+```
 
-`git init`
+gitignore ファイルを作成する
+```bash
+$ touch .gitignore
+```
 
-`touch .gitignore`
+git の設定を表示する
+```bash
+$ git config -l
+```
 
-`git config -l`
+git の設定を変更する（ユーザーネーム）
+```bash
+$ git config --local user.name "hoge"
+```
 
-`git config --local user.name "hoge"`
+git の設定を変更する（メールアドレス）
+```bash
+$ git config --local user.email hoge@gmail.com
+```
 
-`git config --local user.email hoge@gmail.com`
+README.md に書き込む
+```bash
+$ echo "# hoge" >> README.md
+```
 
-`echo "# hoge" >> README.md`
+指定したファイルを本番公開する
+```bash
+$ hugo undraft content/post/hello.md
+```
+draft = true になる
 
-`hugo undraft content/post/hello.md`
+.gitignore の cache 削除する
+```bash
+$ git rm -r --cached .
+$ git add .
+$ git commit -m ".gitignore is now working"
+$ git push origin master
+```
 
-`hugo server --theme=hugo-tranquilpeak-theme`
 
-.gitignore の cache 削除
-`git rm -r --cached .`
+# テーマを追加・変更したいとき
+[Hugo Themes Site](http://themes.gohugo.io/) などから使用したいテーマを選んで、  
+テーマフォルダに `cd` して `git clone` する。
 
-`git add .`
+```bash
+$ cd themes
+```
 
-`git commit -m ".gitignore is now working"`
+```bash
+$ git clone テーマのリポジトリ
+```
 
-`git push origin master`
+`git clone` できたらテーマの git フォルダは削除しましょう。
+※ git フォルダがあると`git push`できず、テーマの変更が反映されないときがあります。
 
-## 参考サイト
-Hugo Quickstart Guide
+そして config.toml を開いて、テーマを指定している下記ソースを変更します。
 
+```js
+theme = "hoge"
+```
+
+
+# さいごに
+今回は有難いことにいろいろと教えていただきながら進めたので、無事できました。  
+普段使っている PC でもちゃんとできるのかなと不安だったのですが、始める前の準備としては Hugo をインストールするくらいで（Homebrew アップデートしたり）お手軽です。
+
+気になったのは、公式？のテーマがちょっと少ないのかなぁと感じてしまいました。  
+これからのんびりオリジナル テーマを作っていきたいと思います。  
+（今のテーマも使いやすくてお気に入りなのですが・・）
+
+少しソースが理解できる人なら、マークダウンでメモのように書き始められたりして、毎回管理画面などから記事を投稿したりしなくて良いので静的サイトジェネレーターでサイトを作る方が楽なのかも知れないです。  
+`git push`したら本番公開されるので、FTP などで更新する手間もありませんでした。
+
+
+# 参考にさせていただいたサイト
+- Hugo Quickstart Guide  
 https://gohugo.io/overview/quickstart/
 
-テーマの作り方
-
+- テーマの作り方  
 https://42-design.work/design/how-to-make-of-hugo-theme/
+
+- Hugoでブログをつくった  
+http://porgy13.github.io/post/new-hugo-blog/
