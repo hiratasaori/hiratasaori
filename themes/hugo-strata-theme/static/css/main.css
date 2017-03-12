@@ -2492,6 +2492,10 @@
 			margin: 0;
 		}
 
+		#header h1 span {
+			font-size: 1em;
+		}
+
 		#header .image.avatar {
 			margin: 0 0 1em 0;
 			width: 6.25em;
