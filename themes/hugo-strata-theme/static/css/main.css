@@ -3150,6 +3150,9 @@
 /*
  * 	CUSTOM CSS
  */
+.recent-posts {
+	/*list-style-type: none;*/
+}
 
  .recent-posts li {
 	 font-size: 20px;
