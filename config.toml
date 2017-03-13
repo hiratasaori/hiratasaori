@@ -52,7 +52,7 @@ paginate = 10
 
 
 	[params.portfolio]
-		hide  = false
+		hide  = true
 		title = "Recent Work"
 
 		# The images and thumbnails are stored under static/images
