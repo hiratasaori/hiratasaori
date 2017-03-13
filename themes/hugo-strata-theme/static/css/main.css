@@ -2492,10 +2492,6 @@
 			margin: 0;
 		}
 
-		#header h1 span {
-			font-size: 1em;
-		}
-
 		#header .image.avatar {
 			margin: 0 0 1em 0;
 			width: 6.25em;
@@ -3154,9 +3150,6 @@
 /*
  * 	CUSTOM CSS
  */
-.recent-posts {
-	/*list-style-type: none;*/
-}
 
  .recent-posts li {
 	 font-size: 20px;
