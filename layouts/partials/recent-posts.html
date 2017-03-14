@@ -4,13 +4,10 @@
     {{ end }}
 
 	<div class="row">
-        <br>
-        <p>
-        <ul class="recent-posts">
-        {{ range first 5 (where .Data.Pages "Section" "post") }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-        </p>
+    <ul class="recent-posts">
+    {{ range first 5 (where .Data.Pages "Section" "post") }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
 	</div>
 </section>

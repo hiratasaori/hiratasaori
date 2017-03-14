@@ -3154,13 +3154,45 @@
 /*
  * 	CUSTOM CSS
  */
-.recent-posts {
-	list-style-type: none;
-	padding-left: 0;
+
+.s-home h2 {
+  margin-bottom: .5em;
 }
 
  .recent-posts li {
-	 font-size: 20px;
-	 line-height: 36px;
+   font-size: 125%; /*20px*/
+   line-height: 1.6;
 	 padding-left: 0;
+   margin-bottom: .4em;
  }
+
+.recent-posts li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1800px) {
+  .recent-posts {
+    list-style-type: none;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .recent-posts {
+    list-style-type: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 980px) {
+  #sidebar ul {
+    padding-left: 0;
+  }
+  #sidebar ul li {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
