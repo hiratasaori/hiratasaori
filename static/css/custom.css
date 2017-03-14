@@ -1,6 +1,9 @@
 .s-home h2 {
   margin-bottom: 0.5em;
 }
+#header {
+  background-color: #192824;
+}
 #footer .icons li {
   padding: 0;
   margin-right: 0.6em;
