@@ -1,0 +1,20 @@
+{
+  "name": "sample",
+  "version": "0.1.0",
+  "url": "https://hiratasaori.com/",
+  "main": "index.js",
+  "private": true,
+  "author": "HIRATA SAORI",
+  "author_uri": "https://hiratasaori.com/",
+  "license": "Creative Commons Attribution 3.0 Unported",
+  "devDependencies": {
+    "browser-sync": "^2.8.3",
+    "gulp": "^3.9.0",
+    "gulp-cssfmt": "^1.0.0",
+    "gulp-data": "^1.2.0",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.3.0",
+    "run-sequence": "^1.1.5"
+  }
+}
