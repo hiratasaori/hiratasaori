@@ -53,7 +53,7 @@ paginate = 10
 
 
 	[params.portfolio]
-		hide  = true
+		hide  = false
 		title = "Work"
 
 		# The images and thumbnails are stored under static/images
