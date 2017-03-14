@@ -1,6 +1,6 @@
 baseurl = "https://hiratasaori.com/"
 languageCode = "en-us"
-title = "Hirata Saori"
+title = "Hirata Saori | 平田 小織"
 theme = "hugo-strata-theme"
 
 
@@ -14,7 +14,7 @@ paginate = 10
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Hirata Saori"
+	name = "平田 小織"
 	description = ""
 
 	# Format dates with Go's time formatting
@@ -22,7 +22,7 @@ paginate = 10
 
 	# Add custom assets with their paths relative to the static folder
 	custom_js   = []
-	custom_css  = ["/css/custom.css"]
+	custom_css  = [ "/css/custom.css" ]
 
 
 	[params.sidebar]
@@ -34,8 +34,8 @@ paginate = 10
 		# The icons will be shown if you enter your username
 		github = "hiratasaori"
 		facebook = "saori.hirata.167"
+    twitter = "saori_hirata"
 		# googleplus = "109378861229646006280"
-		# twitter = "spf13"
 		# gitlab = "spf13"
 		# dribbble = ""
 		# flickr = ""
@@ -48,8 +48,8 @@ paginate = 10
 
 	[params.about]
 		hide  = false
-		title = "Plofile"
-		content = "これは今日まずこの学習共としてものの時が調っずない。もし場合に危く目はいくらこの附随たたらほどからもってならたには比較いうんないて、あくまでには立つたですないまし。人をついなかろ事はもし次第を必ずしもですなかっです。"
+		title = "Profile"
+		content = "兵庫県生まれです。<br />大阪のデザイン制作会社で Web デザインやマークアップをさせていただいてます。<br />好きな食べ物は納豆とラーメン、休みの日は映画を観たり、近所をサイクリングしたりしてます。<br />関西圏で美味しいラーメン屋さんがあったらぜひ教えてください＾＾"
 
 
 	[params.portfolio]
@@ -96,10 +96,10 @@ paginate = 10
 
 	[params.recentposts]
 		hide  = false
-		title = "最近の記事"
+		title = "Notes"
 
 	[params.contact]
-		hide  = false
+		hide  = true
 		title = "Get In Touch"
 		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
 
