@@ -3,7 +3,7 @@
 		{{ partial "header" . }}
 
 		{{ "<!-- Main -->" | safeHTML }}
-		<div id="main" class="{{ if .IsHome }}{{ printf "s-home" }}{{ end }}">
+		<div id="main" class="{{ if .IsHome }}{{ printf "s-home" }}{{ else if .IsPage }}{{ printf "s-single" }}{{ end }}">
 			{{ block "main" . }}{{ end }}
 		</div>
 

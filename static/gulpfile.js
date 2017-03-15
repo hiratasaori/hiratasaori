@@ -8,7 +8,8 @@ var stylus = require('gulp-stylus');
 var please = require('gulp-pleeease');
 var watchList = {
     stylus: [
-        './src/stylus/*.styl'
+        './src/stylus/*.styl',
+        '!./src/stylus/_*.styl'
     ]
 };
 
@@ -22,7 +23,7 @@ gulp.task('default', function () {
 });
 
 gulp.task('stylus', function () {
-    return gulp.src('./src/stylus/*.styl')
+    return gulp.src( ['./src/stylus/*.styl', '!./src/stylus/_*.styl'] )
         .pipe(plumber())
         .pipe(stylus())
         .pipe(please({
