@@ -96,7 +96,7 @@ paginate = 10
 
 	[params.recentposts]
 		hide  = false
-		title = "Notes"
+		title = "Note"
 
 	[params.contact]
 		hide  = true
@@ -139,6 +139,6 @@ paginate = 10
 	weight = 0
 
 [[menu.main]]
-	name = "Blog"
+	name = "Note"
 	url  = "post/"
 	weight = 10
