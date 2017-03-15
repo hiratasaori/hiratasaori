@@ -5,7 +5,7 @@ theme = "hugo-strata-theme"
 
 
 # hugo-strata-theme のソース
-disqusShortname = "spf13"
+disqusShortname = "hirata-saori"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = "UA-93372029-1"
 # Define how many posts should appear on a site
@@ -53,7 +53,7 @@ paginate = 10
 
 
 	[params.portfolio]
-		hide  = false
+		hide  = true
 		title = "Work"
 
 		# The images and thumbnails are stored under static/images
