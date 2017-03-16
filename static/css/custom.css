@@ -37,6 +37,9 @@ pre.code-toolbar .toolbar span {
   border-radius: 0.2em;
   padding: 0.2em 0.6em;
 }
+.s-single img.fit {
+  margin: 2em 0;
+}
 #header {
   background-color: #192824;
 }
@@ -83,6 +86,12 @@ pre.code-toolbar .toolbar span {
 .s-single h1:first-child {
   margin-top: 0;
   margin-bottom: 0.5em;
+}
+.s-single h2 {
+  margin-top: 2em;
+}
+.s-single h2:first-child {
+  margin-top: 0;
 }
 a.s-target_blank code,
 a.s-target_blank code[class*="language-"] {
