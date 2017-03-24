@@ -35,6 +35,7 @@ paginate = 10
 		github = "hiratasaori"
 		facebook = "saori.hirata.167"
     twitter = "saori_hirata"
+    instagram = "hiratasaori_"
 		# googleplus = "109378861229646006280"
 		# gitlab = "spf13"
 		# dribbble = ""
@@ -97,6 +98,10 @@ paginate = 10
 	[params.recentposts]
 		hide  = false
 		title = "Note"
+
+	[params.gallery]
+		hide  = true
+		title = "Gallery"
 
 	[params.contact]
 		hide  = true
